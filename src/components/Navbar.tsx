@@ -59,7 +59,7 @@ export default function Navbar() {
                 <rect x="8" y="8" width="5" height="5" rx="1" fill="#050505" opacity="0.4" />
               </svg>
             </div>
-            <span className="font-bold text-base tracking-tight">NEXUS</span>
+            <span className="font-bold text-base tracking-tight">COSMIC</span>
           </Link>
 
           {/* Desktop Nav Links */}

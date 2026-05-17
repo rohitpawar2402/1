@@ -30,7 +30,7 @@ export default function CTASection() {
       <div className="relative z-10 container-xl px-6 md:px-8">
         <motion.div
           style={{ scale }}
-          className="relative rounded-2xl overflow-hidden border border-[#b8ff00]/15 bg-[#b8ff00]/[0.02] p-12 md:p-20 text-center"
+          className="relative rounded-2xl overflow-hidden border border-[#b8ff00]/15 bg-[#b8ff00]/[0.02] p-7 sm:p-12 md:p-20 text-center"
         >
           {/* Top lime line */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#b8ff00]/60 to-transparent" />
@@ -70,7 +70,7 @@ export default function CTASection() {
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 items-center"
+              className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center w-full sm:w-auto"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}

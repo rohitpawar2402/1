@@ -105,7 +105,7 @@ export default function PricingSection() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-4 items-start">
           {plans.map((plan, i) => {
             const Icon = plan.icon;
             return (

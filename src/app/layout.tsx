@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NEXUS — Build Beyond Limits",
+  title: "COSMIC — Build Beyond Limits",
   description:
     "The next-generation platform for teams who demand performance, elegance, and developer experience without compromise. Start your free trial today.",
   keywords: [
@@ -13,17 +13,17 @@ export const metadata: Metadata = {
     "team collaboration",
     "premium design",
   ],
-  authors: [{ name: "NEXUS Team" }],
+  authors: [{ name: "COSMIC Team" }],
   openGraph: {
-    title: "NEXUS — Build Beyond Limits",
+    title: "COSMIC — Build Beyond Limits",
     description:
       "A cinematic digital experience where design meets engineering. Crafted for visionaries.",
     type: "website",
-    url: "https://nexus.app",
+    url: "https://cosmic.app",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NEXUS — Build Beyond Limits",
+    title: "COSMIC — Build Beyond Limits",
     description: "The next-generation platform for teams who demand the extraordinary.",
   },
   robots: "index, follow",

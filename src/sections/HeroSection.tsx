@@ -137,7 +137,7 @@ export default function HeroSection() {
 
       {/* ── Headline Content ── */}
       <motion.div
-        className="relative z-10 flex flex-col items-center justify-end min-h-screen pb-24 px-6 text-center"
+        className="relative z-10 flex flex-col items-center justify-end min-h-screen pb-20 md:pb-24 px-4 md:px-6 text-center"
         style={{ y: contentY, opacity }}
       >
         {/* Status chip */}
@@ -203,7 +203,7 @@ export default function HeroSection() {
 
         {/* CTA row */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center gap-4"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto px-0"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.3, ease: [0.22, 1, 0.36, 1] }}
@@ -219,7 +219,7 @@ export default function HeroSection() {
 
         {/* Scroll prompt */}
         <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 0.8 }}

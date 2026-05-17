@@ -54,6 +54,7 @@ body {
   color: var(--text-inverse);
   font-family: "Inter", system-ui, sans-serif;
   overflow-x: hidden;
+  max-width: 100vw;
   cursor: none;
 }
 
@@ -404,5 +405,43 @@ body {
 @media (max-width: 768px) {
   .cursor-outer, .cursor-dot { display: none; }
   body { cursor: auto; }
-  .btn-lime, .btn-ghost-dark, .btn-ghost-light { cursor: pointer; }
+
+  /* Prevent any horizontal overflow */
+  * { max-width: 100%; }
+
+  /* Navbar */
+  .navbar-wrap { padding: 10px 12px; }
+  .navbar-inner { padding: 8px 12px; border-radius: 10px; }
+
+  /* Typography — scale down on small screens */
+  .text-display   { font-size: clamp(2.4rem, 11vw, 4rem); line-height: 0.92; }
+  .text-hero-sub  { font-size: clamp(1.8rem,  8vw, 3rem); line-height: 0.92; }
+  .text-headline  { font-size: clamp(1.9rem,  8vw, 3rem); line-height: 0.96; }
+  .text-statement { font-size: clamp(1.4rem,  6vw, 2rem); line-height: 1.1;  }
+  .text-title     { font-size: clamp(1.2rem,  5vw, 1.6rem); }
+
+  /* Section spacing */
+  .section-pad { padding: 56px 20px; }
+
+  /* Container safe padding */
+  .container-xl { padding-left: 20px; padding-right: 20px; }
+
+  /* Buttons — full-width when stacked */
+  .btn-lime,
+  .btn-ghost-dark,
+  .btn-ghost-light {
+    cursor: pointer;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-display   { font-size: clamp(2rem, 12vw, 3rem); }
+  .text-hero-sub  { font-size: clamp(1.5rem, 9vw, 2.2rem); }
+  .text-headline  { font-size: clamp(1.6rem, 9vw, 2.2rem); }
+  .text-statement { font-size: clamp(1.2rem, 7vw, 1.6rem); }
+  .section-pad    { padding: 48px 16px; }
+  .container-xl   { padding-left: 16px; padding-right: 16px; }
 }

@@ -66,10 +66,10 @@ export default function FeaturesSection() {
       style={{ background: "#050505" }}
     >
       {/* ── Statement text section ── */}
-      <div className="relative grid-dark py-28 px-6 md:px-16 border-t border-white/[0.05] overflow-hidden">
+      <div className="relative grid-dark py-16 md:py-28 px-6 md:px-16 border-t border-white/[0.05] overflow-hidden pb-10 md:pb-28">
         {/* Big decorative text */}
         <motion.p
-          className="absolute top-8 right-8 text-[10px] tracking-[0.3em] uppercase font-mono text-white/15"
+          className="hidden md:block absolute top-8 right-8 text-[10px] tracking-[0.3em] uppercase font-mono text-white/15"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 1, delay: 0.3 }}
@@ -82,7 +82,7 @@ export default function FeaturesSection() {
             style={{ y: statementY, opacity: statementOpacity }}
             className="max-w-5xl"
           >
-            <p className="text-statement text-white leading-tight mb-6">
+            <p className="text-statement text-white leading-tight mb-6 pr-0 md:pr-12">
               Imagine your product as an{" "}
               <span className="text-lime-ghost italic">intelligent</span>{" "}
               <span className="text-lime-ghost italic">engine</span>{" "}
@@ -97,9 +97,9 @@ export default function FeaturesSection() {
       </div>
 
       {/* ── Stats Bar ── */}
-      <div className="border-y border-white/[0.05] py-8 px-6">
+      <div className="border-y border-white/[0.05] py-8 px-6 md:px-8">
         <div className="container-xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}
@@ -108,7 +108,7 @@ export default function FeaturesSection() {
                 transition={{ duration: 0.7, delay: 0.2 + i * 0.1 }}
                 className="flex flex-col gap-1"
               >
-                <span className="text-4xl font-bold text-lime tracking-tight">{s.value}</span>
+                <span className="text-3xl md:text-4xl font-bold text-lime tracking-tight">{s.value}</span>
                 <span className="text-xs tracking-[0.12em] uppercase text-white/35 font-mono">{s.label}</span>
               </motion.div>
             ))}
@@ -119,7 +119,7 @@ export default function FeaturesSection() {
       {/* ── Feature Grid ── */}
       <div className="section-pad">
         <div className="container-xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.05] rounded-xl overflow-hidden border border-white/[0.05]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.05] rounded-xl overflow-hidden border border-white/[0.05] mx-0">
             {features.map((f, i) => {
               const Icon = f.icon;
               return (

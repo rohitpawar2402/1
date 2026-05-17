@@ -54,7 +54,7 @@ export default function FooterSection() {
       <div className="relative z-10 container-xl px-6 md:px-8">
         {/* ── Big CTA block ── */}
         <motion.div
-          className="relative rounded-2xl overflow-hidden border border-[#b8ff00]/15 bg-[#b8ff00]/[0.02] p-10 md:p-16 my-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-10"
+          className="relative rounded-2xl overflow-hidden border border-[#b8ff00]/15 bg-[#b8ff00]/[0.02] p-6 md:p-16 my-10 md:my-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-10"
           style={{ scale: bgScale }}
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -94,13 +94,13 @@ export default function FooterSection() {
 
         {/* ── Footer nav ── */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-5 gap-12 pb-16"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 pb-12 md:pb-16"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           {/* Brand */}
-          <div className="col-span-2 flex flex-col gap-6">
+          <div className="col-span-2 sm:col-span-3 md:col-span-2 flex flex-col gap-5 md:gap-6">
             <div className="flex items-center gap-2.5">
               <div className="w-7 h-7 rounded-md bg-[#b8ff00] flex items-center justify-center">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -110,7 +110,7 @@ export default function FooterSection() {
                   <rect x="8" y="8" width="5" height="5" rx="1" fill="#050505" opacity="0.4" />
                 </svg>
               </div>
-              <span className="font-bold text-base text-white tracking-tight">NEXUS</span>
+              <span className="font-bold text-base text-white tracking-tight">COSMIC</span>
             </div>
             <p className="text-sm text-white/35 leading-relaxed max-w-xs">
               The next-generation platform for teams who refuse to compromise on performance, design, or developer experience.
@@ -161,12 +161,12 @@ export default function FooterSection() {
 
         {/* Bottom bar */}
         <motion.div
-          className="border-t border-white/[0.05] py-7 flex flex-col sm:flex-row items-center justify-between gap-4"
+          className="border-t border-white/[0.05] py-6 md:py-7 flex flex-col items-center sm:flex-row sm:justify-between gap-3 text-center sm:text-left"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.6 }}
         >
-          <p className="text-xs text-white/20 font-mono">© 2024 NEXUS Technologies. All rights reserved.</p>
+          <p className="text-xs text-white/20 font-mono">© 2024 COSMIC Technologies. All rights reserved.</p>
           <div className="flex items-center gap-4">
             {["Privacy", "Terms", "Cookies"].map((item) => (
               <a

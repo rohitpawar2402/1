@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
       <div className="relative z-10 container-xl px-6 md:px-8">
         {/* Header */}
         <motion.div
-          className="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 mb-16"
+          className="flex flex-col gap-6 mb-10 md:mb-16"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
@@ -106,8 +106,8 @@ export default function TestimonialsSection() {
               <span className="text-white/25 italic">leaders.</span>
             </h2>
           </div>
-          <p className="text-body text-white/35 max-w-xs md:text-right">
-            Don't take our word for it — hear from the teams who've transformed their workflows with NEXUS.
+          <p className="text-body text-white/35 max-w-xs">
+            Don't take our word for it — hear from the teams who've transformed their workflows with COSMIC.
           </p>
         </motion.div>
 

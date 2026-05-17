@@ -67,7 +67,7 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
       onMouseLeave={() => setHovered(false)}
       data-cursor-hover
     >
-      <div className="flex items-start md:items-center gap-6 md:gap-10 py-8 px-6 md:px-0">
+      <div className="flex items-start md:items-center gap-4 md:gap-10 py-6 md:py-8 px-0">
         {/* Number */}
         <span className="font-mono text-xs text-black/25 pt-1 w-6 shrink-0">{project.number}</span>
 
@@ -147,7 +147,7 @@ export default function ShowcaseSection() {
       <div className="relative z-10 pt-28 pb-20">
         {/* Header */}
         <div className="container-xl px-6 md:px-8">
-          <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 mb-14">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 md:gap-8 mb-10 md:mb-14">
             <motion.div
               style={{ x: headlineX, opacity: headlineOpacity }}
               className="flex flex-col gap-4"
